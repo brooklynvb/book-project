@@ -33,7 +33,7 @@
       /* Header */
       h1 {
         color: var(--title-color);
-        font-size: 110px;
+        font-size: 100px;
         margin-top: 50px;
         margin-bottom: 0px;
         font-family: "Montserrat", sans-serif;
@@ -44,7 +44,7 @@
       }
       h3 {
         color: var(--sub-title-color);
-        margin: 0px 0px 60px 0px;
+        margin: 0px 0px 30px 0px;
         font-family: "Montserrat", sans-serif;
         letter-spacing: 2px;
       }
@@ -52,6 +52,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: var(--background-color);
+        margin-bottom: 0px;
       }
       .left {
         text-align: center;
@@ -66,7 +67,6 @@
         background-color: var(--accent-color);
         color: black;
         padding: 10px 20px;
-        margin-bottom: 60px;
         border-radius: 3px;
         letter-spacing: 2px;
         font-family: "Montserrat", sans-serif;
@@ -78,8 +78,7 @@
       .header-img {
         display: block;
         margin: 0 auto;
-        width: 440px;
-        padding: 120px 0px 0px 0px;
+        max-width: 440px;
       }
 
       /* MAIN */
@@ -88,6 +87,74 @@
         margin: 0 auto;
         padding: 50px;
         background-color: var(--title-color);
+      }
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+      .info-box {
+        margin-top: 15px;
+      }
+      .info-img {
+        background-color: var(--accent-color);
+        border-radius: 3px;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 20px;
+        max-width: 160px;
+      }
+      .about-par {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 800px) {
+        .header {
+          grid-template-columns: 1fr;
+          margin-bottom: 40px;
+        }
+        h1 {
+          font-size: 60px;
+          margin-top: 20px;
+        }
+        h2 {
+          font-size: 25px;
+          text-align: center;
+          margin-top: 20px;
+        }
+        h3 {
+          font-size: 13px;
+          margin-bottom: 30px;
+        }
+        .small-text {
+          font-size: 20px;
+        }
+        .header-img {
+          display: none;
+        }
+        .btn {
+          font-size: 13px;
+        }
+        .about {
+          grid-template-columns: 1fr;
+        }
+        .about-par {
+          grid-template-columns: 1fr;
+        }
+        .info-img {
+          display: none;
+        }
+        .info-box {
+          grid-template-columns: 1fr 1fr;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
       }
     </style>
   </head>
@@ -113,6 +180,35 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/101/origina
       <main>
         <section>
           <h2>About the Best Selling Book:</h2>
+          <div class="about">
+            <div class="info-box">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/213/original/783d704c04c224c4a8a91ca4e772c461.jpg?1701897572"
+                class="info-img"
+              />
+            </div>
+            <div class="about-par">
+              <p>
+                Have you ever wondered what your dog is thinking? Meet one funny
+                dog—Enzo, the lovable mutt who tells this story. Enzo knows he
+                is different from other dogs. Every dog loves to chase cars, but
+                Enzo longs to race them. He learns by watching TV and by
+                listening to his best friend, Denny, an up-and-coming race-car
+                driver, and his daughter, Zoe, his constant companion.Enzo finds
+                that life just like being on the racetrack.
+              </p>
+
+              <p>
+                For he sees that life, like racing, isn’t simply about going
+                fast. And, by learning the tricks of racing against all odds, he
+                takes on his family’s challenges and emerges a hero. Enzo holds
+                in his heart the dream that Denny will go on to be a racing
+                champion with his daughter right by his side. For theirs is an
+                extraordinary friendship—one that reminds us all to celebrate
+                the triumph of the human (and canine) spirit.
+              </p>
+            </div>
+          </div>
         </section>
       </main>
       <footer></footer>
