@@ -3,79 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
     <title>Racing in The Rain</title>
     <style>
+      :root {
+        --background-color: #110b37;
+        --title-color: #ffcd29;
+        --sub-title-color: #f24822;
+        --accent-color: #ffa629;
+      }
+      body {
+        background-color: var(--background-color);
+      }
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      /* Header */
+      h1 {
+        color: var(--title-color);
+        font-size: 110px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-family: "Montserrat", sans-serif;
+      }
+      h2 {
+        color: var(--sub-title-color);
+        font-family: "Montserrat", sans-serif;
+      }
+      h3 {
+        color: var(--sub-title-color);
+        margin: 0px 0px 60px 0px;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 2px;
+      }
       .header {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 80px 50px 60px 60px;
-        max-width: 1400px;
-        max-height: 400px;
+        background-color: var(--background-color);
       }
-      .header .left {
-        text-align: left;
+      .left {
+        text-align: center;
       }
-      h1 {
-        font-size: 60px;
-        margin-top: 0;
+      .small-text {
+        font-size: 50px;
+        font-family: "Gloria Hallelujah", cursive;
+        vertical-align: 20px;
       }
-      h3 {
-        letter-spacing: 3px;
-      }
-      h4 {
-        opacity: 0.7;
-      }
-      .button {
-        background-color: black;
-        color: white;
-        padding: 7px 15px;
-      }
-      a.button {
+      .btn {
         text-decoration: none;
-      }
-      .button:hover {
-        background-color: rgb(187, 186, 186);
-
-        transition-duration: 0.4s;
+        background-color: var(--accent-color);
+        color: black;
+        padding: 10px 20px;
+        margin-bottom: 60px;
+        border-radius: 3px;
+        letter-spacing: 2px;
+        font-family: "Montserrat", sans-serif;
       }
       img {
-        display: flex;
         width: 100%;
         height: auto;
-        margin: 0 auto;
       }
-      section {
-        width: 100%;
+      .header-img {
+        display: block;
         margin: 0 auto;
-        padding: 100px;
+        width: 440px;
+        padding: 120px 0px 0px 0px;
+      }
+
+      /* MAIN */
+      section {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 50px;
+        background-color: var(--title-color);
       }
     </style>
   </head>
   <body>
-    <div class="header">
-      <div class="left">
-        <h3>The Art of</h3>
-        <h1>Racing in the Rain</h1>
-        <h4>New York Times bestselling novel from Garth Stein</h4>
-        <a
-          href="https://www.amazon.com/Art-Racing-Rain-Novel/dp/0061537969"
-          class="button"
-          >Buy now</a
-        >
+    <div class="container">
+      <div class="header">
+        <div class="left">
+          <h1>
+            RACING <br />
+            <span class="small-text">in the </span>RAIN
+          </h1>
+          <h3>Now a major motion picture!</h3>
+          <a href="/" class="btn">BUY NOW</a>
+        </div>
+        <div class="right">
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/101/original/IMG_8367.png?1701809383"
+            class="header-img"
+          />
+        </div>
       </div>
-      <div class="right">
-        <img
-          src="https://m.media-amazon.com/images/I/81o8PrHjBqL._SL1500_.jpg"
-        />
-      </div>
+      <main>
+        <section>
+          <h2>About the Best Selling Book:</h2>
+        </section>
+      </main>
+      <footer></footer>
     </div>
-    <main>
-      <section>
-        <h2>Meet the Characters</h2>
-      </section>
-    </main>
-    <footer></footer>
-
     <script></script>
   </body>
 </html>
