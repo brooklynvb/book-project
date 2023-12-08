@@ -130,7 +130,7 @@
       .char-body h4 {
         text-align: center;
         font-size: 20px;
-        font-family: "Gloria Hallelujah", cursive;
+        font-family: "Montserrat", sans-serif;
         margin-bottom: 5px;
         margin-top: 0px;
       }
@@ -197,7 +197,37 @@
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
 
-      /* RESPONSIVE */
+      /* MOVIE SECTION */
+      .movie {
+        text-align: center;
+        margin-top: 50px;
+      }
+     
+      /* FOOTER */
+.info {grid-template-columns: 1fr 1fr;}
+.icons {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.self {
+  text-align: right;
+  margin-top: 0px;
+  margin-right: 15px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+a { text-decoration: none;
+color: white;}
+/* RESPONSIVE p1 */
+@media (max-width: 1000px){
+  h1 { font-size: 80px;}
+  .small-text { font-size: 30px;}
+  h3 { font-size: 15px;}
+}
+      /* RESPONSIVE p2*/
       @media (max-width: 800px) {
         .header {
           grid-template-columns: 1fr;
@@ -258,6 +288,10 @@
         .auth-img {
           display: none;
         }
+        .movie-box {
+          width: 300px;
+          height: auto;
+        }
       }
     </style>
   </head>
@@ -270,7 +304,7 @@
             <span class="small-text">in the </span>RAIN
           </h1>
           <h3>Now a major motion picture!</h3>
-          <a href="/" class="btn">BUY NOW</a>
+          <a href="https://www.amazon.com/Art-Racing-Rain-Novel/dp/0061537969/ref=sr_1_2?crid=GCDBY7XI1LEG&keywords=racing+in+the+rain&qid=1702064048&sprefix=racing+in+the+rain%2Caps%2C115&sr=8-2" target="_blank" class="btn">BUY NOW</a>
         </div>
         <div class="right">
           <img
@@ -357,27 +391,27 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/237/origina
         <section>
           <div class="slideshow-container">
             <div class="mySlides">
-              <q
-                >I love you the more in that I believe you had liked me for my
-                own sake and for nothing else</q
-              >
-              <p class="author">- John Keats</p>
+              <q></q>
+                'Sometimes I think you actually understand me,' he said. 'It's
+                like there's a person inside there.'
+              </q>
+              <p class="author">- Denny</p>
             </div>
 
             <div class="mySlides">
               <q
-                >But man is not made for defeat. A man can be destroyed but not
-                defeated.</q
+                >I'm not afraid of it anymore. I wanted you with me before because I wanted you to protect me, but I'm not afraid of it anymore. Because it's not the end.</q
               >
-              <p class="author">- Ernest Hemingway</p>
+              <p class="author">- Eve</p>
             </div>
 
             <div class="mySlides">
               <q
-                >I have not failed. I've just found 10,000 ways that won't
-                work.</q
+                >"I bark twice so he knows, so he remembers. What I want now is
+                what I've always wanted. One more lap, Denny! One more lap!
+                Faster!"</q
               >
-              <p class="author">- Thomas A. Edison</p>
+              <p class="author">- Enzo</p>
             </div>
           </div>
 
@@ -420,8 +454,32 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/102/origina
             </div>
           </div>
         </section>
+        <section>
+          <h2>From Page to Screen</h2>
+          <div class="movie">     
+              <iframe width="560" height="315" class="movie-box" src="https://www.youtube.com/embed/Dp2ufFO4QGg?si=mlo33r0vHsKgKaBB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </section>
       </main>
-      <footer></footer>
+      <footer>
+        <div class="grid info">
+          <div class="icons">
+            <a href="https://github.com/ANurfHerder" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256"
+style="fill:#000000;">
+<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-0.9 0.2,-1.3c0,-0.2 0.2,-0.3 0.3,-0.3h0.1c0.5,0.1 1.5,0.4 2.4,1.3c0.6,-0.2 1.3,-0.3 2,-0.3c0.7,0 1.4,0.1 2,0.3c0.9,-0.9 2,-1.2 2.5,-1.3h0.1c0.2,0 0.3,0.1 0.4,0.3c0,0.4 0,0.9 0,1.3c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
+</svg></a>
+<a href="https://www.linkedin.com/in/brooklyn-van-bebber-6bb8a9242/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256"
+style="fill:#000000;">
+<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M19,3h-14c-1.105,0 -2,0.895 -2,2v14c0,1.105 0.895,2 2,2h14c1.105,0 2,-0.895 2,-2v-14c0,-1.105 -0.895,-2 -2,-2zM7.738,17v0c-0.697,0 -1.262,-0.565 -1.262,-1.262v-4.477c0.001,-0.696 0.566,-1.261 1.262,-1.261v0c0.697,0 1.262,0.565 1.262,1.262v4.477c0,0.696 -0.565,1.261 -1.262,1.261zM7.694,8.717c-0.771,0 -1.286,-0.514 -1.286,-1.2c0,-0.686 0.514,-1.2 1.371,-1.2c0.771,0 1.286,0.514 1.286,1.2c0,0.686 -0.514,1.2 -1.371,1.2zM16.779,17v0c-0.674,0 -1.221,-0.547 -1.221,-1.221v-2.605c0,-1.058 -0.651,-1.174 -0.895,-1.174c-0.244,0 -1.058,0.035 -1.058,1.174v2.605c0,0.674 -0.547,1.221 -1.221,1.221h-0.081c-0.674,0 -1.221,-0.547 -1.221,-1.221v-4.517c0,-0.697 0.565,-1.262 1.262,-1.262v0c0.697,0 1.262,0.565 1.262,1.262c0,0 0.282,-1.262 2.198,-1.262c1.219,0 2.196,0.977 2.196,3.174v2.605c0,0.674 -0.547,1.221 -1.221,1.221z"></path></g></g>
+</svg></a>
+          </div>
+          <div class="self">
+            <p>Open source code by <a href="https://www.linkedin.com/in/brooklyn-van-bebber-6bb8a9242/">Brooklyn Van Bebber</a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script>
       var slideIndex = 1;
