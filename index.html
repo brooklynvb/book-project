@@ -49,6 +49,7 @@
         margin: 0px 0px 30px 0px;
         font-family: "Montserrat", sans-serif;
         letter-spacing: 2px;
+
       }
       .header {
         grid-template-columns: 1fr 1fr;
@@ -90,6 +91,11 @@
         max-width: 100%;
         margin: 0 auto;
         padding: 20px 40px;
+        margin: 0px 50px;
+      }
+      .best {
+        color: var(--background-color);
+        margin-bottom: 0px;
       }
       .about {
         grid-template-columns: 1fr 2fr;
@@ -226,13 +232,14 @@ color: white;}
   h1 { font-size: 80px;}
   .small-text { font-size: 30px;}
   h3 { font-size: 15px;}
+ 
 }
       /* RESPONSIVE p2*/
       @media (max-width: 800px) {
         .header {
           grid-template-columns: 1fr;
           margin-bottom: 40px;
-        }
+        } .best { text-align: center;}
         h1 {
           font-size: 60px;
           margin-top: 20px;
@@ -245,6 +252,7 @@ color: white;}
         h3 {
           font-size: 13px;
           margin-bottom: 30px;
+          
         }
         .small-text {
           font-size: 20px;
@@ -324,7 +332,10 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/101/origina
                 class="info-img"
               />
             </div>
-            <div class="about-par">
+            <div>
+              <h3 class="best">New York Times Best Seller</h3>
+              
+              <div class="about-par">
               <p>
                 Have you ever wondered what your dog is thinking? Meet one funny
                 dog—Enzo, the lovable mutt who tells this story. Enzo knows he
@@ -344,7 +355,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/101/origina
                 extraordinary friendship—one that reminds us all to celebrate
                 the triumph of the human (and canine) spirit.
               </p>
-            </div>
+            </div></div>
           </div>
         </section>
         <section>
